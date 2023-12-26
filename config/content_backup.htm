@@ -51,8 +51,21 @@ return 0;
 <p><b>執行結果 </b></p>
 <p>a == b is 0 <br/> a &gt; b is 1 <br/> a &lt; b is 0 <br/> a &gt;= b is 1 <br/> a &lt;= b is 0 <br/> a != b is 1</p>
 <p>a == b is 1 <br/> a &gt; b is 0 <br/> a &lt; b is 0 <br/> a &gt;= b is 1 <br/> a &lt;= b is 1 <br/> a != b is 0</p>
-<p><strong></strong></p>
-<p><b>  </b></p>
+<p><strong></strong>位元運算元</p>
+<pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">#include&lt;stdio.h&gt;
+void main()
+{
+int a,b;
+a = 15;
+b = 1;
+printf("%d \n", a | b ); /* a OR b */
+printf("%d \n", a &amp; b ); /* a AND b */
+printf("%d \n", a ^ b ); /* a XOR b */
+printf("%d \n", a &lt;&lt; 1 ); /* a 位元左移 1 位 */
+printf("%d \n", a &gt;&gt; 1 ); /* a 位元右移一位 */
+printf("%d \n", ~a ); /* A 的補數運算 */
+}</pre>
+<p><b>執行結果  15/1/14/30/7/-16</b></p>
 <p><b></b></p>
 <p><b></b></p>
 <p><b></b></p>
